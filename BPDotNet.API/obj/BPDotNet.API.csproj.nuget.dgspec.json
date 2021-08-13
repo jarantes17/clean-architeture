@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.API/BPDotNet.API.csproj": {}
+  },
+  "projects": {
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.API/BPDotNet.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.API/BPDotNet.API.csproj",
+        "projectName": "BPDotNet.API",
+        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.API/BPDotNet.API.csproj",
+        "packagesPath": "/home/jonatas/.nuget/packages/",
+        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jonatas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

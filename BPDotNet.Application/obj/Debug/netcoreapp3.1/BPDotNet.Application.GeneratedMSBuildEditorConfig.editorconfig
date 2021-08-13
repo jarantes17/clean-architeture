@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = BPDotNet.Application
+build_property.ProjectDir = /media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Application/
