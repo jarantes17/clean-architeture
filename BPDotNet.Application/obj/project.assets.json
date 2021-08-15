@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Application/BPDotNet.Application.csproj",
+      "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/BPDotNet.Application.csproj",
       "projectName": "BPDotNet.Application",
-      "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Application/BPDotNet.Application.csproj",
+      "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/BPDotNet.Application.csproj",
       "packagesPath": "/home/jonatas/.nuget/packages/",
-      "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Application/obj/",
+      "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/jonatas/.nuget/NuGet/NuGet.Config"

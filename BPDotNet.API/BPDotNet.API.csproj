@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 
@@ -14,6 +15,11 @@
       <Folder Include="Extensions" />
       <Folder Include="Filters" />
       <Folder Include="Validators" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BPDotNet.Application\BPDotNet.Application.csproj" />
+      <ProjectReference Include="..\BPDotNet.Infrastructure\BPDotNet.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -5,9 +5,29 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="CrossCutting" />
       <Folder Include="Persistence\Configurations" />
-      <Folder Include="Persistence\Contexts" />
-      <Folder Include="Persistence\Repositories" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="CrossCuting\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="CrossCuting\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="CrossCuting\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BPDotNet.Core\BPDotNet.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+      <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.5" />
     </ItemGroup>
 
 </Project>

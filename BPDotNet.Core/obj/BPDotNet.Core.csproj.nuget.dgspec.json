@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Core/BPDotNet.Core.csproj": {}
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj": {}
   },
   "projects": {
-    "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Core/BPDotNet.Core.csproj": {
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Core/BPDotNet.Core.csproj",
+        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj",
         "projectName": "BPDotNet.Core",
-        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Core/BPDotNet.Core.csproj",
+        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj",
         "packagesPath": "/home/jonatas/.nuget/packages/",
-        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPratices/BPDotNet.Core/obj/",
+        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jonatas/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
