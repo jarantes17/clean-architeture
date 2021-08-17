@@ -1,8 +1,8 @@
 using System;
 
-namespace BPDotNet.Core.Entities
+namespace BPDotNet.Core.Entities.Base
 {
-    public class EntityBase
+    public class Entity
     {
         public Guid Id { get; set; }
         public DateTime CreatedAt { get; set; }

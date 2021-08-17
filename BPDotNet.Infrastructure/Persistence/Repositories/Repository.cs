@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using BPDotNet.Core.Entities;
+using BPDotNet.Core.Entities.Base;
 using BPDotNet.Core.Interfaces.Repositories;
 using BPDotNet.Infrastructure.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -75,9 +76,9 @@ namespace BPDotNet.Infrastructure.Persistence.Repositories
 
         public bool Delete(TEntity model)
         {
-            if (model is EntityBase)
+            if (model is Entity)
             {
-                (model as EntityBase).IsDeleted = true;
+                (model as Entity).IsDeleted = true;
                 EntityEntry<TEntity> _entry = _context.Entry(model);
 
                 DbSet.Attach(model);

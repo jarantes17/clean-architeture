@@ -5,7 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="CrossCutting" />
       <Folder Include="Persistence\Configurations" />
     </ItemGroup>
 
