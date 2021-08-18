@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hKy+JQDWRpC2qcKX2sSqa0+VJRODTMHC4iC24JA3GI/nbDAxBoM+CLRt2QzjsVQIrSzNw2oywOkQWYHNrABXCA==",
+  "dgSpecHash": "7DM/ZgqrK/Il4705xdPdHinuwA69l8DajtFy0m+aP0Hal/b0K0cNqSyNrtrWbl0JqaHWmrC4bFBCHFk+VQu1mA==",
   "success": true,
   "projectFilePath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.IoC/BPDotNet.IoC.csproj",
   "expectedPackageFiles": [

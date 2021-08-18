@@ -8,4 +8,8 @@
       <Folder Include="InputModels" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BPDotNet.Core\BPDotNet.Core.csproj" />
+    </ItemGroup>
+
 </Project>

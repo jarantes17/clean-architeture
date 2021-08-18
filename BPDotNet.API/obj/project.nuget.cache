@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1xCDao+IPUZtGV1skNuvTZdBjwiMDlGvzcDEPYGRZ5hm85qgHUQLtxlKJDemD+NFhmHRF1ZlkemfFpPnTImm6Q==",
+  "dgSpecHash": "VuHCYeHqewrzSVpUMTNc2SdA0ct51G+yW3PKRqJHro1/VSFmFQ0/YV+a8fmnqI0nwQKaIOQdwZZdjD2+1fDdEw==",
   "success": true,
   "projectFilePath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.API/BPDotNet.API.csproj",
   "expectedPackageFiles": [

@@ -25,7 +25,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
