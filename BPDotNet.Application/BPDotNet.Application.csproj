@@ -6,8 +6,6 @@
 
     <ItemGroup>
       <Folder Include="InputModels" />
-      <Folder Include="Services\Abstracts" />
-      <Folder Include="ViewModels" />
     </ItemGroup>
 
 </Project>

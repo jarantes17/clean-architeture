@@ -29,8 +29,17 @@
               "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/BPDotNet.Application.csproj": {
                 "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/BPDotNet.Application.csproj"
               },
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Cloud/BPDotNet.Cloud.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Cloud/BPDotNet.Cloud.csproj"
+              },
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj"
+              },
               "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Infrastructure/BPDotNet.Infrastructure.csproj": {
                 "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Infrastructure/BPDotNet.Infrastructure.csproj"
+              },
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.IoC/BPDotNet.IoC.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.IoC/BPDotNet.IoC.csproj"
               }
             }
           }
@@ -48,6 +57,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -84,6 +97,58 @@
         "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/BPDotNet.Application.csproj",
         "packagesPath": "/home/jonatas/.nuget/packages/",
         "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jonatas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Cloud/BPDotNet.Cloud.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Cloud/BPDotNet.Cloud.csproj",
+        "projectName": "BPDotNet.Cloud",
+        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Cloud/BPDotNet.Cloud.csproj",
+        "packagesPath": "/home/jonatas/.nuget/packages/",
+        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Cloud/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jonatas/.nuget/NuGet/NuGet.Config"
@@ -186,6 +251,76 @@
         }
       }
     },
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj",
+        "projectName": "BPDotNet.Data",
+        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj",
+        "packagesPath": "/home/jonatas/.nuget/packages/",
+        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jonatas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.26, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Infrastructure/BPDotNet.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -231,6 +366,74 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.IoC/BPDotNet.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.IoC/BPDotNet.IoC.csproj",
+        "projectName": "BPDotNet.IoC",
+        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.IoC/BPDotNet.IoC.csproj",
+        "packagesPath": "/home/jonatas/.nuget/packages/",
+        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.IoC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jonatas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/BPDotNet.Application.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Application/BPDotNet.Application.csproj"
+              },
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj"
+              },
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [

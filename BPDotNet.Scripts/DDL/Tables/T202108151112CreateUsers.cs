@@ -17,8 +17,9 @@ namespace BPDotNet.Scripts.DDL.Tables
             var table = Create.Table(tableName).WithDescription("Table of users");
 
             table.WithColumn("id")
-                .AsString(100)
+                .AsInt32()
                 .PrimaryKey()
+                .Identity()
                 .NotNullable();
             
             table.WithColumn("name")

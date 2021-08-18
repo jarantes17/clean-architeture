@@ -1,4 +1,5 @@
-using BPDotNet.Infrastructure.Persistence.Contexts;
+using BPDotNet.Data.Persistence.Contexts;
+using BPDotNet.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +29,8 @@ namespace BPDotNet.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "BPDotNet.API", Version = "v1"});
             });
+            
+            NativeInjector.RegisterDependencies(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

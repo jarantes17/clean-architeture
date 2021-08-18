@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj": {}
+  },
+  "projects": {
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj",
+        "projectName": "BPDotNet.Core",
+        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj",
+        "packagesPath": "/home/jonatas/.nuget/packages/",
+        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jonatas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj",
+        "projectName": "BPDotNet.Data",
+        "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/BPDotNet.Data.csproj",
+        "packagesPath": "/home/jonatas/.nuget/packages/",
+        "outputPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jonatas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj": {
+                "projectPath": "/media/sharedfiles/projects/studies/dotnetcore/BestPractices/BPDotNet.Core/BPDotNet.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.26, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
