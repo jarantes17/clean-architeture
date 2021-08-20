@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
 
-namespace BPDotNet.Data.Persistence.Configurations
+namespace BPDotNet.Data.Configurations
 {
     internal class SequenceValueGenerator : ValueGenerator<int>
     {

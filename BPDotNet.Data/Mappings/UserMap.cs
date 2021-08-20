@@ -2,7 +2,7 @@ using BPDotNet.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BPDotNet.Data.Persistence.Mappings
+namespace BPDotNet.Data.Mappings
 {
     public class UserMap: IEntityTypeConfiguration<User>
     {

@@ -19,6 +19,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BPDotNet.Application\BPDotNet.Application.csproj" />
+      <ProjectReference Include="..\BPDotNet.Auth\BPDotNet.Auth.csproj" />
       <ProjectReference Include="..\BPDotNet.Cloud\BPDotNet.Cloud.csproj" />
       <ProjectReference Include="..\BPDotNet.Data\BPDotNet.Data.csproj" />
       <ProjectReference Include="..\BPDotNet.Infrastructure\BPDotNet.Infrastructure.csproj" />

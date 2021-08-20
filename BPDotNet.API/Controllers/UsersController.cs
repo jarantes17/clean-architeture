@@ -14,6 +14,10 @@ namespace BPDotNet.API.Controllers
             this._userService = userService;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {

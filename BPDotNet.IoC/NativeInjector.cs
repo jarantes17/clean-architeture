@@ -1,7 +1,7 @@
 using BPDotNet.Application.Services;
 using BPDotNet.Application.Services.Abstracts;
 using BPDotNet.Core.Interfaces.Repositories;
-using BPDotNet.Data.Persistence.Repositories;
+using BPDotNet.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BPDotNet.IoC

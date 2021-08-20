@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using BPDotNet.Core.Entities;
 using BPDotNet.Core.Interfaces.Repositories;
-using BPDotNet.Data.Persistence.Contexts;
+using BPDotNet.Data.Contexts;
 
-namespace BPDotNet.Data.Persistence.Repositories
+namespace BPDotNet.Data.Repositories
 {
     public class UserRepository: Repository<User>, IUserRepository
     {

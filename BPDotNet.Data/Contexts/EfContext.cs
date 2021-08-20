@@ -1,8 +1,8 @@
 using BPDotNet.Core.Entities;
-using BPDotNet.Data.Persistence.Mappings;
+using BPDotNet.Data.Mappings;
 using Microsoft.EntityFrameworkCore;
 
-namespace BPDotNet.Data.Persistence.Contexts
+namespace BPDotNet.Data.Contexts
 {
     public class EfContext: DbContext
     {
