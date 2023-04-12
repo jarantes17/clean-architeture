@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BPDotNet.API.Controllers
 {
-    [Route("api/{controller}")]
+    [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -11,7 +11,7 @@ namespace BPDotNet.API.Controllers
 
         public UsersController(IUserService userService)
         {
-            this._userService = userService;
+            _userService = userService;
         }
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace BPDotNet.API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(this._userService.GetAll());
+            return Ok(_userService.GetAll());
         }
     }
 }

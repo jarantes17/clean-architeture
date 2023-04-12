@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using BPDotNet.Application.ViewModels;
+using BPDotNet.Application.DTO.Response;
 
 namespace BPDotNet.Application.Services.Abstracts
 {
     public interface IUserService
     {
-        List<UserViewModel> GetAll();
+        List<UserResponseDto> GetAll();
     }
 }

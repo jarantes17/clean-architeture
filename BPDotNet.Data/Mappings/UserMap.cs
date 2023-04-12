@@ -8,6 +8,8 @@ namespace BPDotNet.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
+            builder.ToTable("users");
+            
             builder.Property(x => x.Id).IsRequired();
 
             builder.Property(x => x.Name).HasColumnName("name").HasMaxLength(100).IsRequired();

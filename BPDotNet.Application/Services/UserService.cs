@@ -1,30 +1,31 @@
 using System.Collections.Generic;
 using System.Linq;
+using BPDotNet.Application.DTO.Response;
 using BPDotNet.Application.Services.Abstracts;
-using BPDotNet.Application.ViewModels;
+using BPDotNet.Common.Mapping;
+using BPDotNet.Core.Entities;
 using BPDotNet.Core.Interfaces.Repositories;
 
 namespace BPDotNet.Application.Services
 {
-    public class UserService: IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-        
-        public UserService(IUserRepository userRepository)
+        private readonly ISimpleMap<User, UserResponseDto> _userEntityToDtoMap;
+
+        public UserService(IUserRepository userRepository,
+            ISimpleMap<User, UserResponseDto> userEntityToDtoMap
+        )
         {
-            this._userRepository = userRepository;
+            _userRepository = userRepository;
+            _userEntityToDtoMap = userEntityToDtoMap;
         }
-        
-        public List<UserViewModel> GetAll()
+
+
+        public List<UserResponseDto> GetAll()
         {
-            var users = this._userRepository.GetAll();
-            
-            var userViewModels = users.Select(x => new UserViewModel
-            {
-                Id = x.Id,
-                Email = x.Email,
-                Name = x.Name
-            }).ToList();
+            var users = _userRepository.GetAll();
+            var userViewModels = users.Select(user => _userEntityToDtoMap.Map(user)).ToList();
 
             return userViewModels;
         }

@@ -5,11 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="InputModels" />
+      <ProjectReference Include="..\BPDotNet.Common\BPDotNet.Common.csproj" />
+      <ProjectReference Include="..\BPDotNet.Core\BPDotNet.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BPDotNet.Core\BPDotNet.Core.csproj" />
+      <Folder Include="Mapping\ToEntity\" />
     </ItemGroup>
 
 </Project>
