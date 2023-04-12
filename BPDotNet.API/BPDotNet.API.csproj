@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <LangVersion>8</LangVersion>
     </PropertyGroup>
 
@@ -22,7 +22,6 @@
       <ProjectReference Include="..\BPDotNet.Auth\BPDotNet.Auth.csproj" />
       <ProjectReference Include="..\BPDotNet.Cloud\BPDotNet.Cloud.csproj" />
       <ProjectReference Include="..\BPDotNet.Data\BPDotNet.Data.csproj" />
-      <ProjectReference Include="..\BPDotNet.Infrastructure\BPDotNet.Infrastructure.csproj" />
       <ProjectReference Include="..\BPDotNet.IoC\BPDotNet.IoC.csproj" />
     </ItemGroup>
 

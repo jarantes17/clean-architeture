@@ -5,16 +5,16 @@ namespace BPDotNet.Scripts.DDL.Tables
     [Migration(202108151112, "Create table users")]
     public class T202108151112CreateUsers : Migration
     {
-        private const string tableName = "users";
+        private const string TableName = "users";
         
         public override void Down()
         {
-            Delete.Table(tableName);
+            Delete.Table(TableName);
         }
         
         public override void Up()
         {
-            var table = Create.Table(tableName).WithDescription("Table of users");
+            var table = Create.Table(TableName).WithDescription("Table of users");
 
             table.WithColumn("id")
                 .AsInt32()
