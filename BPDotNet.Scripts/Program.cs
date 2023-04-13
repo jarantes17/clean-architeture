@@ -2,6 +2,7 @@ using FluentMigrator.Runner;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using FluentMigrator.Runner.VersionTableInfo;
 
 namespace BPDotNet.Scripts
 {
@@ -30,6 +31,7 @@ namespace BPDotNet.Scripts
                     .WithGlobalConnectionString(targetConnectionString)
                     .ScanIn(typeof(Program).Assembly).For.Migrations())
                 .AddLogging(lb => lb.AddFluentMigratorConsole())
+                .AddTransient<IVersionTableMetaData, CustomMetadataTable>()
                 .BuildServiceProvider(false);
         }
 

@@ -8,6 +8,11 @@ public class UserEntityToDtoMap : ISimpleMap<User, UserResponseDto>
 {
     public UserResponseDto Map(User source)
     {
-        throw new System.NotImplementedException();
+        return new UserResponseDto
+        {
+            Id = source.Id,
+            Email = source.Email,
+            Name = source.Name
+        };
     }
 }

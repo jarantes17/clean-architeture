@@ -9,8 +9,4 @@
       <ProjectReference Include="..\BPDotNet.Core\BPDotNet.Core.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Mapping\ToEntity\" />
-    </ItemGroup>
-
 </Project>

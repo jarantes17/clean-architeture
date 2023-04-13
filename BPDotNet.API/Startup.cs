@@ -54,6 +54,11 @@ namespace BPDotNet.API
                 };
             });
             
+            services.AddMvc(options =>
+            {
+                options.SuppressAsyncSuffixInActionNames = false;
+            });
+            
             services.AddRouting(options => options.LowercaseUrls = true);
         }
 

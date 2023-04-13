@@ -1,5 +1,7 @@
+using BPDotNet.Application.DTO.Request;
 using BPDotNet.Application.DTO.Response;
 using BPDotNet.Application.Mapping.ToDTO;
+using BPDotNet.Application.Mapping.ToEntity;
 using BPDotNet.Application.Services;
 using BPDotNet.Application.Services.Abstracts;
 using BPDotNet.Common.Mapping;
@@ -29,6 +31,8 @@ namespace BPDotNet.IoC
             #region Mappers
 
             services.AddScoped<ISimpleMap<User, UserResponseDto>, UserEntityToDtoMap>();
+            services.AddScoped<ISimpleMap<CreateUserRequestDto, User>, UserDtoToEntity>();
+
 
             #endregion
         }

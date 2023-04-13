@@ -1,3 +1,4 @@
+using System;
 using FluentMigrator;
 
 namespace BPDotNet.Scripts.DDL.Tables
@@ -36,13 +37,16 @@ namespace BPDotNet.Scripts.DDL.Tables
                 .NotNullable();
             
             table.WithColumn("created_at")
-                .AsDateTime();
+                .AsDateTime()
+                .WithDefaultValue(DateTime.Now);
             
             table.WithColumn("updated_at")
-                .AsDateTime();
-            
+                .AsDateTime()
+                .Nullable();
+
             table.WithColumn("is_deleted")
-                .AsBoolean();
+                .AsBoolean()
+                .WithDefaultValue(false);
         }
     }
 }
